@@ -1,7 +1,7 @@
 # Python image
 FROM python:3.12-slim
 
-LABEL maintainer="Telegram bot: https://t.me/StockiDeFi_bot"
+LABEL maintainer="Telegram bot: "
 LABEL author="Max Svid"
 LABEL version="1.0"
 LABEL description="Tg bot for Stocki"
