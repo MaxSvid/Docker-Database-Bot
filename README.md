@@ -2,11 +2,12 @@
 
 [🪐 Check Jupyter Notebook for explanation]()
 
-[🔗 Link: Check Bot]()
+[🔗 Link: Check Bot, not running atm]()
 
 ---
 > [!NOTE]
 > This bot is just a template for showing Docker work with PostgreSQL and Python Scripting.
+
 
 
 
