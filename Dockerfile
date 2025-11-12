@@ -1,10 +1,14 @@
 # Python image
 FROM python:3.12-slim
 
+<<<<<<< HEAD
 LABEL maintainer="Telegram bot: "
+=======
+LABEL maintainer="Telegram: mak_sjr"
+>>>>>>> 948b159 (Changes)
 LABEL author="Max Svid"
 LABEL version="1.0"
-LABEL description="Tg bot for Stocki"
+LABEL description="Tg bot for Docker and PostgreSQL Work"
 
 # Creating non-root user, good for Docker work
 ARG UID=1000

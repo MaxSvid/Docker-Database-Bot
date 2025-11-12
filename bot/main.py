@@ -9,7 +9,7 @@ from db.connect import create_connection
 logging.basicConfig(level=logging.INFO)
 
 async def main():
-    logging.info("Starting the Stocki bot...")
+    logging.info("Starting the Docker bot...")
 
     try:
         connection = create_connection()

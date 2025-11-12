@@ -42,7 +42,7 @@ async def start(message: Message):
     insert_users(user_id, username, language_code)
 
     await message.answer(        
-        text="👋 Welcome to Stocki DeFi Bot!\n\nPlease select your language / Пожалуйста, выберите язык:",
+        text="👋 Welcome to Docker Example Bot!\n\nPlease select your language / Пожалуйста, выберите язык:",
         reply_markup=language_menu()
     )
     
@@ -80,24 +80,6 @@ async def about(callback: CallbackQuery):
     )
     await callback.answer()
 
-# Access section:
-@dp.callback_query(F.data == "access")
-async def access(callback: CallbackQuery):
-    lang = user_languages.get(callback.from_user.id, "en")
-    
-    access_text = translations["access"][lang]
-
-    text_access = access_text.format(
-        admin=settings.CONTACT_ADMIN_USERNAME
-    )
-
-    await callback.message.edit_text(
-        text=text_access,
-        reply_markup=back_menu(lang),
-        parse_mode="Markdown"
-    )
-    await callback.answer()
-
 # Telegram channel url:
 @dp.callback_query(F.data == "join")
 async def join(callback: CallbackQuery):
@@ -116,7 +98,7 @@ async def contact(callback: CallbackQuery):
 
     text_contact = contact_text.format(
         admin=settings.LEAD_ADMIN_USERNAME,
-        website="https://maxsvid.github.io/"
+        website="Not Available atm"
     )
 
     await callback.message.edit_text(

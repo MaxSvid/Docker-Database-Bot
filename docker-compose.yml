@@ -1,10 +1,10 @@
 version: '3.8'
 
 services:
-  tg_bot_stocki:
+  tg_bot_docker:
     build:
       context: .
-    container_name: bot_stocki
+    container_name: bot_practice
     env_file:
       - .env
     environment:
