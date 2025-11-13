@@ -1,28 +1,22 @@
 {
     "welcome_message": {
         "en": "*Thank you for visiting Docker Example Bot!*\n\n👇 Choose an option below to get started",
-        "ru": "*Спасибо, что посетили Docker Example Bot!*\n\n👇 Выберите опцию ниже, чтобы начать" 
-
+        "ru": "*Спасибо, что посетили Docker Example Bot!*\n\n👇 Выберите опцию ниже, чтобы начать"
     },
 
     "about": {
-        "en": "🤖 *Bot Docker Example* demonstrates how to use Python scripting to develop a simple bot and manage a PostgreSQL database from scratch via the console or PgAdmin, integrating Docker Compose and a Dockerfile for seamless Linux deployment. \n\n💡 This project serves as a practical example for learning key concepts of database development, containerization, and deployment workflows with PostgreSQL and Docker.",
-        "ru": "🤖 *Bot Docker Example* демонстрирует, как с помощью Python-скриптов разработать простой бот и управлять базой данных PostgreSQL с нуля через консоль или PgAdmin, интегрируя Docker Compose и Dockerfile для бесшовного развёртывания на Linux. \n\n💡 Этот проект служит практическим примером для изучения ключевых принципов разработки баз данных, контейнеризации и процессов деплоя с использованием PostgreSQL и Docker."
-    },
-
-    "access": {
-        "en": "",
-        "ru": ""
+        "en": "🤖 *Bot Docker Example* demonstrates how to use Python scripting to develop a simple bot...",
+        "ru": "🤖 *Bot Docker Example* демонстрирует, как с помощью Python-скриптов..."
     },
 
     "contact": {
-        "en": "📩 Contact for more information.\n\nHere are the contacts:\n- Telegram: {admin}\n- Website: {}",
-        "ru": "📩 Связь для дополнительной информации.\n\nКонтакты:\n- Telegram: {admin}\n- Сайт: {}"
+        "en": "📩 Contact for more information.\n\nHere are the contacts:\n\n- Telegram: {admin}\n- Website: {website}",
+        "ru": "📩 Связь для дополнительной информации.\n\nКонтакты:\n\n- Telegram: {admin}\n- Сайт: {website}"
     },
 
     "links": {
-        "en": "Official link below⬇️",
-        "ru": "Официальные ссылка внизу⬇️"
+        "en": "Official links below⬇️",
+        "ru": "Официальные ссылки внизу⬇️"
     },
 
     "back_menu_text": {
@@ -33,11 +27,5 @@
     "no_text_allowed": {
         "en": "Unknown message!\nPlease use the /start command to begin.",
         "ru": "Неизвестное сообщение!\nПожалуйста, используйте команду /start, чтобы начать."
-    },
-
-    "help": {
-        "en": "Something doesn't work, contact maintainer {settings.CONTACT_ADMIN_USERNAME}",
-        "ru": "Что-то не работает, обратитесь к мейнтейнеру {settings.CONTACT_ADMIN_USERNAME}"
     }
-
 }

@@ -1,10 +1,10 @@
 version: '3.8'
 
 services:
-  tg_bot_docker:
+  telegram_Docker_SQLbot:
     build:
       context: .
-    container_name: bot_practice
+    container_name: telegram_Docker_SQLbot
     env_file:
       - .env
     environment:

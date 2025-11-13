@@ -1,16 +1,12 @@
-# Python image
+# Used light Python image
 FROM python:3.12-slim
 
-<<<<<<< HEAD
-LABEL maintainer="Telegram bot: "
-=======
 LABEL maintainer="Telegram: mak_sjr"
->>>>>>> 948b159 (Changes)
 LABEL author="Max Svid"
 LABEL version="1.0"
 LABEL description="Tg bot for Docker and PostgreSQL Work"
 
-# Creating non-root user, good for Docker work
+# Create non-root user
 ARG UID=1000
 ARG GID=1000
 ENV UID=${UID}
@@ -20,8 +16,8 @@ RUN useradd -m -u $UID docker_user
 
 USER docker_user
 
-# Setting working directory to the bot folder 
-# We working with Linux so it starts with /home 
+# Set working directory to the bot folder 
+# In Linux it starts with /home 
 WORKDIR /home/docker_user/app
 
 # Python settings
@@ -29,12 +25,12 @@ ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
 # Copy and install dependencies
-# This file depends on docker-compose to copy .env from
+# This file depends on docker-compose to copy .env 
 COPY requirements.txt ./
 RUN pip install -r requirements.txt
 
-# Coping the full project together
+# Copy the project
 COPY . .
 
-# Running bot from the bot directory with main.py file 
+# Run bot from the bot directory
 CMD ["python3", "bot/main.py"]

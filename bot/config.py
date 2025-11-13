@@ -11,19 +11,9 @@ load_dotenv()
 class Settings:
     BOT_TOKEN = os.getenv("BOT_TOKEN")
     LEAD_ADMIN_USERNAME = os.getenv("LEAD_ADMIN_USERNAME")
-    CONTACT_ADMIN_USERNAME = os.getenv("CONTACT_ADMIN_USERNAME")
-
-
-settings = Settings()
-
-
-class IDSettings:
-    LEAD_ADMIN_ID = os.getenv("LEAD_ADMIN_ID")
     ADMIN_ID = os.getenv("ADMIN_ID")
 
-
-IDsettings = IDSettings()
-
+settings = Settings()
 
 class DatabaseSettings:
     POSTGRES_PASSWORD = os.getenv("POSTGRES_PASSWORD")
@@ -34,4 +24,5 @@ class DatabaseSettings:
 
 
 databaseSettings = DatabaseSettings()
+
 
