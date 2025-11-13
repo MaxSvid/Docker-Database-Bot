@@ -1,5 +1,5 @@
-# Example of Dockerized Conrainer for Data Collection inside Telegram Bot
-
+# Example of Dockerized Conrainer for Data Collection inside Telegram Bot with PostgeSQL
+ 
 [🪐 Check Jupyter Notebook for explanation]()
 
 [🔗 Link: Check Bot, not running atm]()
@@ -7,6 +7,7 @@
 ---
 > [!NOTE]
 > This bot is just a template for showing Docker work with PostgreSQL and Python Scripting.
+
 
 
 
