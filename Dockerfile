@@ -1,5 +1,5 @@
 # Used light Python image
-FROM python:3.12-slim
+FROM python:3.14-slim
 
 LABEL maintainer="Telegram: mak_sjr"
 LABEL author="Max Svid"
